@@ -14,7 +14,7 @@ public class GyroscopeMove : MonoBehaviour
     void Update()
     {
         //transform.rotation = Input.gyro.attitude;
-        //transform.Rotate(-Input.gyro.rotationRateUnbiased.x, 0, -Input.gyro.rotationRateUnbiased.y); //celular horizontal
-        transform.Rotate(-Input.gyro.rotationRateUnbiased.x, Input.gyro.rotationRateUnbiased.z, Input.gyro.rotationRateUnbiased.y);
+        //transform.Rotate(-Input.gyro.rotationRateUnbiased.x, Input.gyro.rotationRateUnbiased.z, Input.gyro.rotationRateUnbiased.y); 
+        transform.Rotate(-Input.gyro.rotationRateUnbiased.x, Input.gyro.rotationRateUnbiased.z, 0);
     }
 }
