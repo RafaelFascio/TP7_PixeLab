@@ -356,7 +356,7 @@ GameObject:
   - component: {fileID: 422656516}
   - component: {fileID: 422656518}
   m_Layer: 0
-  m_Name: PapelContainer
+  m_Name: Metal
   m_TagString: Container
   m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -381,7 +381,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 12, y: 1, z: 12}
+  m_Size: {x: 11, y: 1, z: 7}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &422656517
 Transform:
@@ -390,14 +390,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 422656515}
-  m_LocalRotation: {x: -0, y: 0.38268343, z: -0, w: 0.92387956}
-  m_LocalPosition: {x: -2.396254, y: -13.60951, z: -5.687704}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.396254, y: -13.60951, z: -6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 585804385}
   m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 45, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &422656518
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -410,8 +410,76 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4164481813e3e4640895f17e591c0a4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tipo: papel
+  tipo: metal
   objetoPuntuje: {fileID: 909046495}
+--- !u!1 &556803971
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 556803974}
+  - component: {fileID: 556803973}
+  - component: {fileID: 556803972}
+  m_Layer: 0
+  m_Name: Funador
+  m_TagString: Funador
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &556803972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 556803971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4164481813e3e4640895f17e591c0a4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipo: suelo
+  objetoPuntuje: {fileID: 909046495}
+--- !u!65 &556803973
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 556803971}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 36, y: 1, z: 36}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &556803974
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 556803971}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -12.42, z: 16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &585804384
 GameObject:
   m_ObjectHideFlags: 0
@@ -599,7 +667,7 @@ GameObject:
   - component: {fileID: 920536024}
   - component: {fileID: 920536026}
   m_Layer: 0
-  m_Name: GlassContainer
+  m_Name: Plasticos
   m_TagString: Container
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -624,7 +692,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 12, y: 1, z: 12}
+  m_Size: {x: 7, y: 1, z: 11}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &920536025
 Transform:
@@ -633,14 +701,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 920536023}
-  m_LocalRotation: {x: -0, y: 0.38268343, z: -0, w: 0.92387956}
-  m_LocalPosition: {x: -11.396254, y: -13.60951, z: 3.312296}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -11.67, y: -13.60951, z: 3.312296}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 585804385}
   m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 45, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &920536026
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -653,7 +721,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4164481813e3e4640895f17e591c0a4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tipo: vidrio
+  tipo: plastico
   objetoPuntuje: {fileID: 909046495}
 --- !u!1 &962954953
 GameObject:
@@ -845,14 +913,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.23567027, y: -0, z: -0, w: 0.97183305}
-  m_LocalPosition: {x: 0, y: 14.42, z: -10}
+  m_LocalRotation: {x: 0.17551415, y: -0, z: -0, w: 0.9844769}
+  m_LocalPosition: {x: 0, y: 10.4, z: -11.48}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 27.262, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 20.217, y: 0, z: 0}
 --- !u!1 &1008947656
 GameObject:
   m_ObjectHideFlags: 0
@@ -6119,7 +6187,7 @@ GameObject:
   - component: {fileID: 1576561301}
   - component: {fileID: 1576561303}
   m_Layer: 0
-  m_Name: OrganicContainer
+  m_Name: PapelyCarton
   m_TagString: Container
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -6144,7 +6212,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 12, y: 1, z: 12}
+  m_Size: {x: 11, y: 1, z: 7}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1576561302
 Transform:
@@ -6153,14 +6221,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1576561300}
-  m_LocalRotation: {x: -0, y: 0.38268343, z: -0, w: 0.92387956}
-  m_LocalPosition: {x: -2.396254, y: -13.60951, z: 12.312296}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.396254, y: -13.60951, z: 12.59}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 585804385}
   m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 45, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1576561303
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6173,7 +6241,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4164481813e3e4640895f17e591c0a4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tipo: organico
+  tipo: papel
   objetoPuntuje: {fileID: 909046495}
 --- !u!1 &1594192925
 GameObject:
@@ -11319,7 +11387,7 @@ GameObject:
   - component: {fileID: 2074379442}
   - component: {fileID: 2074379444}
   m_Layer: 0
-  m_Name: PlasticContainer
+  m_Name: Vidrio
   m_TagString: Container
   m_Icon: {fileID: 419385456094870383, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -11344,7 +11412,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 12, y: 1, z: 12}
+  m_Size: {x: 7, y: 1, z: 11}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &2074379443
 Transform:
@@ -11353,14 +11421,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2074379441}
-  m_LocalRotation: {x: -0, y: 0.38268343, z: -0, w: 0.92387956}
-  m_LocalPosition: {x: 6.603746, y: -13.60951, z: 3.312296}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.94, y: -13.60951, z: 3.312296}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 585804385}
   m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 45, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2074379444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11373,5 +11441,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4164481813e3e4640895f17e591c0a4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tipo: plastico
+  tipo: vidrio
   objetoPuntuje: {fileID: 909046495}

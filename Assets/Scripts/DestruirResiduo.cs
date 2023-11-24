@@ -48,8 +48,8 @@ public class DestruirResiduo : MonoBehaviour
                     objetoPuntuje.GetComponent<Puntaje>().puntos -= 5f;
                 }
                 break;
-            case "organico":
-                if (collision.gameObject.CompareTag("Organico"))
+            case "metal":
+                if (collision.gameObject.CompareTag("Metal"))
                 {
                     objetoPuntuje.GetComponent<Puntaje>().puntos += 10f;
                     // Destruye el objeto actual (el residuo)
@@ -72,8 +72,14 @@ public class DestruirResiduo : MonoBehaviour
                     objetoPuntuje.GetComponent<Puntaje>().puntos -= 5f;
                 }
                 break;
+            case "suelo":
+                    objetoPuntuje.GetComponent<Puntaje>().puntos -= 10f;
+                    // Destruye el objeto actual (el residuo)
+                    //Destroy(collision.gameObject);
+                break;
             default:
                 break;
+                
         }
         Destroy(collision.gameObject);
         /*if (collision.gameObject.CompareTag("Container"))
