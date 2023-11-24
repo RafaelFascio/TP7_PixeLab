@@ -8,6 +8,7 @@ public class DestruirResiduo : MonoBehaviour
     private string tipo;
 
     public GameObject objetoPuntuje;
+    public GameObject efectoEstrella;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +31,7 @@ public class DestruirResiduo : MonoBehaviour
                     objetoPuntuje.GetComponent<Puntaje>().puntos += 10f;
 
                     objetoPuntuje.GetComponent<Puntaje>().textoPuntos.color = new Color(0,255,0,255);
+                    Instantiate(efectoEstrella, collision.transform.position, collision.transform.rotation);
                     // Destruye el objeto actual (el residuo)
                     //Destroy(collision.gameObject);
                 }
@@ -43,6 +45,7 @@ public class DestruirResiduo : MonoBehaviour
                 {
                     objetoPuntuje.GetComponent<Puntaje>().puntos += 10f;
                     objetoPuntuje.GetComponent<Puntaje>().textoPuntos.color = new Color(0,255,0,255);
+                    Instantiate(efectoEstrella, collision.transform.position, collision.transform.rotation);
                     // Destruye el objeto actual (el residuo)
                     //Destroy(collision.gameObject);
                 }
@@ -56,7 +59,8 @@ public class DestruirResiduo : MonoBehaviour
                 if (collision.gameObject.CompareTag("Metal"))
                 {
                     objetoPuntuje.GetComponent<Puntaje>().puntos += 10f;
-                    objetoPuntuje.GetComponent<Puntaje>().textoPuntos.color = new Color(0,255,0,255);                    
+                    objetoPuntuje.GetComponent<Puntaje>().textoPuntos.color = new Color(0,255,0,255);
+                    Instantiate(efectoEstrella, collision.transform.position, collision.transform.rotation);
                     // Destruye el objeto actual (el residuo)
                     //Destroy(collision.gameObject);
                 }
@@ -72,6 +76,7 @@ public class DestruirResiduo : MonoBehaviour
                 {
                     objetoPuntuje.GetComponent<Puntaje>().puntos += 10f;
                     objetoPuntuje.GetComponent<Puntaje>().textoPuntos.color = new Color(0,255,0,255);
+                    Instantiate(efectoEstrella, collision.transform.position, collision.transform.rotation);
                     // Destruye el objeto actual (el residuo)
                     //Destroy(collision.gameObject);
                 }
