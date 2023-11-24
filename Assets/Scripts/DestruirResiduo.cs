@@ -9,6 +9,7 @@ public class DestruirResiduo : MonoBehaviour
     private SoundManager soundManager;
 
     public GameObject objetoPuntuje;
+    public GameObject efectoEstrella;
     void Awake(){
         soundManager = FindObjectOfType<SoundManager>();
     }
@@ -33,6 +34,22 @@ public class DestruirResiduo : MonoBehaviour
                     objetoPuntuje.GetComponent<Puntaje>().puntos += 10f;
 
                     objetoPuntuje.GetComponent<Puntaje>().textoPuntos.color = new Color(0,255,0,255);
+                    soundManager.SeleccionAudio(0, 0.5f);
+                    Instantiate(efectoEstrella, collision.transform.position, collision.transform.rotation);
+                    // Destruye el objeto actual (el residuo)
+                    //Destroy(collision.gameObject);
+                }
+                else
+                {
+                    objetoPuntuje.GetComponent<Puntaje>().puntos -= 5f;
+                }
+                break;
+            case "vidrio":
+                if (collision.gameObject.CompareTag("Vidrio"))
+                {
+                    objetoPuntuje.GetComponent<Puntaje>().puntos += 10f;
+                    objetoPuntuje.GetComponent<Puntaje>().textoPuntos.color = new Color(0,255,0,255);
+                    Instantiate(efectoEstrella, collision.transform.position, collision.transform.rotation);
                     soundManager.SeleccionAudio(0, 0.5f);
                     // Destruye el objeto actual (el residuo)
                     //Destroy(collision.gameObject);
@@ -65,6 +82,7 @@ public class DestruirResiduo : MonoBehaviour
                 {
                     objetoPuntuje.GetComponent<Puntaje>().puntos += 10f;
                     objetoPuntuje.GetComponent<Puntaje>().textoPuntos.color = new Color(0,255,0,255);
+                    Instantiate(efectoEstrella, collision.transform.position, collision.transform.rotation);
                     soundManager.SeleccionAudio(0, 0.5f);                    
                     // Destruye el objeto actual (el residuo)
                     //Destroy(collision.gameObject);
@@ -82,6 +100,7 @@ public class DestruirResiduo : MonoBehaviour
                 {
                     objetoPuntuje.GetComponent<Puntaje>().puntos += 10f;
                     objetoPuntuje.GetComponent<Puntaje>().textoPuntos.color = new Color(0,255,0,255);
+                    Instantiate(efectoEstrella, collision.transform.position, collision.transform.rotation);
                     soundManager.SeleccionAudio(0, 0.5f);
                     // Destruye el objeto actual (el residuo)
                     //Destroy(collision.gameObject);
