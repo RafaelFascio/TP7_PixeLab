@@ -6,7 +6,11 @@ public class GeneradorBehaviour : MonoBehaviour
 {
     public GameObject[] prefabsResiduos;
     private Transform puntoGeneracion;
-    public float tiempoEspera = 5f;
+    public float tiempoEspera = 7f;
+
+    public GameObject objetoPuntuje;
+    private float puntaje;
+    private float resta=0;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +22,19 @@ public class GeneradorBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+        if (objetoPuntuje.GetComponent<Puntaje>().puntos < 200)
+        {
+            puntaje = objetoPuntuje.GetComponent<Puntaje>().puntos;
+            puntaje -= resta;
+            if (puntaje >= 50)
+            {
+                tiempoEspera -= 1f;
+                resta += 50;
+            }
+
+        }
+
         
     }
     IEnumerator GenerarResiduos()

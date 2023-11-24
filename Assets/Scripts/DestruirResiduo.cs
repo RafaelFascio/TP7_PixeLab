@@ -31,6 +31,10 @@ public class DestruirResiduo : MonoBehaviour
                     // Destruye el objeto actual (el residuo)
                     //Destroy(collision.gameObject);
                 }
+                else
+                {
+                    objetoPuntuje.GetComponent<Puntaje>().puntos -= 5f;
+                }
                 break;
             case "vidrio":
                 if (collision.gameObject.CompareTag("Vidrio"))
@@ -38,6 +42,10 @@ public class DestruirResiduo : MonoBehaviour
                     objetoPuntuje.GetComponent<Puntaje>().puntos += 10f;
                     // Destruye el objeto actual (el residuo)
                     //Destroy(collision.gameObject);
+                }
+                else
+                {
+                    objetoPuntuje.GetComponent<Puntaje>().puntos -= 5f;
                 }
                 break;
             case "organico":
@@ -47,6 +55,10 @@ public class DestruirResiduo : MonoBehaviour
                     // Destruye el objeto actual (el residuo)
                     //Destroy(collision.gameObject);
                 }
+                else
+                {
+                    objetoPuntuje.GetComponent<Puntaje>().puntos -= 5f;
+                }
                 break;
             case "papel":
                 if (collision.gameObject.CompareTag("Papel"))
@@ -54,6 +66,10 @@ public class DestruirResiduo : MonoBehaviour
                     objetoPuntuje.GetComponent<Puntaje>().puntos += 10f;
                     // Destruye el objeto actual (el residuo)
                     //Destroy(collision.gameObject);
+                }
+                else
+                {
+                    objetoPuntuje.GetComponent<Puntaje>().puntos -= 5f;
                 }
                 break;
             default:
