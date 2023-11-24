@@ -729,7 +729,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!199 &1370168615
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -5648,7 +5648,8 @@ MonoBehaviour:
   - {fileID: 5994723810385151375, guid: 58d94700693142743be537b1d6d7f2db, type: 3}
   - {fileID: 6055579008440674396, guid: 20f3bfa80d31c604d83e8b230ec79359, type: 3}
   - {fileID: 205296772015395309, guid: 517b7b70f76cfc7478bea20ceb528d53, type: 3}
-  tiempoEspera: 5
+  tiempoEspera: 7
+  objetoPuntuje: {fileID: 909046495}
 --- !u!1 &1559126494
 GameObject:
   m_ObjectHideFlags: 0
