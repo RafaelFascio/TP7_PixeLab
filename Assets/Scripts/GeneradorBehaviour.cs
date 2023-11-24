@@ -23,7 +23,7 @@ public class GeneradorBehaviour : MonoBehaviour
     void Update()
     {
         
-        if (objetoPuntuje.GetComponent<Puntaje>().puntos < 200)
+        if (objetoPuntuje.GetComponent<Puntaje>().puntos < 300)
         {
             puntaje = objetoPuntuje.GetComponent<Puntaje>().puntos;
             puntaje -= resta;
@@ -46,8 +46,9 @@ public class GeneradorBehaviour : MonoBehaviour
             // Selecciona aleatoriamente un prefab de residuo
             GameObject residuoAleatorio = prefabsResiduos[Random.Range(0, prefabsResiduos.Length)];
 
-            // Instancia el residuo en la posición del generador
-            Instantiate(residuoAleatorio, puntoGeneracion.position, Quaternion.identity);
+            // Instancia el residuo en la posiciï¿½n del generador
+            Instantiate(residuoAleatorio, puntoGeneracion.position, Quaternion.identity); 
         }
     }
+
 }

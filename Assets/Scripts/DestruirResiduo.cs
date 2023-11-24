@@ -28,6 +28,8 @@ public class DestruirResiduo : MonoBehaviour
                 if (collision.gameObject.CompareTag("Plastico"))
                 {
                     objetoPuntuje.GetComponent<Puntaje>().puntos += 10f;
+
+                    objetoPuntuje.GetComponent<Puntaje>().textoPuntos.color = new Color(0,255,0,255);
                     // Destruye el objeto actual (el residuo)
                     //Destroy(collision.gameObject);
                 }
@@ -40,40 +42,48 @@ public class DestruirResiduo : MonoBehaviour
                 if (collision.gameObject.CompareTag("Vidrio"))
                 {
                     objetoPuntuje.GetComponent<Puntaje>().puntos += 10f;
+                    objetoPuntuje.GetComponent<Puntaje>().textoPuntos.color = new Color(0,255,0,255);
                     // Destruye el objeto actual (el residuo)
                     //Destroy(collision.gameObject);
                 }
                 else
                 {
                     objetoPuntuje.GetComponent<Puntaje>().puntos -= 5f;
+                    objetoPuntuje.GetComponent<Puntaje>().textoPuntos.color= new Color(255,0,0,255);
                 }
                 break;
             case "metal":
                 if (collision.gameObject.CompareTag("Metal"))
                 {
                     objetoPuntuje.GetComponent<Puntaje>().puntos += 10f;
+                    objetoPuntuje.GetComponent<Puntaje>().textoPuntos.color = new Color(0,255,0,255);                    
                     // Destruye el objeto actual (el residuo)
                     //Destroy(collision.gameObject);
                 }
+
                 else
                 {
                     objetoPuntuje.GetComponent<Puntaje>().puntos -= 5f;
+                    objetoPuntuje.GetComponent<Puntaje>().textoPuntos.color= new Color(255,0,0,255);
                 }
                 break;
             case "papel":
                 if (collision.gameObject.CompareTag("Papel"))
                 {
                     objetoPuntuje.GetComponent<Puntaje>().puntos += 10f;
+                    objetoPuntuje.GetComponent<Puntaje>().textoPuntos.color = new Color(0,255,0,255);
                     // Destruye el objeto actual (el residuo)
                     //Destroy(collision.gameObject);
                 }
                 else
                 {
                     objetoPuntuje.GetComponent<Puntaje>().puntos -= 5f;
+                    objetoPuntuje.GetComponent<Puntaje>().textoPuntos.color= new Color(255,0,0,255);
                 }
                 break;
             case "suelo":
                     objetoPuntuje.GetComponent<Puntaje>().puntos -= 10f;
+                    objetoPuntuje.GetComponent<Puntaje>().textoPuntos.color= new Color(255,0,0,255);
                     // Destruye el objeto actual (el residuo)
                     //Destroy(collision.gameObject);
                 break;
@@ -82,10 +92,10 @@ public class DestruirResiduo : MonoBehaviour
                 
         }
         Destroy(collision.gameObject);
-        /*if (collision.gameObject.CompareTag("Container"))
-        {
-            // Destruye el objeto actual (el residuo)
-            Destroy(gameObject);
-        }*/
+        Invoke("cambioColor",0.3f);
+    }
+    private void cambioColor(){
+        objetoPuntuje.GetComponent<Puntaje>().textoPuntos.color = new Color(255,255,255,255);   
+
     }
 }

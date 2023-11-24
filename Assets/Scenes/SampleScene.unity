@@ -381,8 +381,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 11, y: 1, z: 7}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 11, y: 1, z: 8.23248}
+  m_Center: {x: 0, y: 0, z: -0.61624}
 --- !u!4 &422656517
 Transform:
   m_ObjectHideFlags: 0
@@ -463,7 +463,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 36, y: 1, z: 36}
+  m_Size: {x: 70, y: 1, z: 70}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &556803974
 Transform:
@@ -653,7 +653,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27be0a38ff82ba1419472d4a33d4e807, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  puntos: 0
+  puntos: 200
   textoPuntos: {fileID: 1559126496}
 --- !u!1 &920536023
 GameObject:
@@ -692,8 +692,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 7, y: 1, z: 11}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 8.23248, y: 1, z: 11}
+  m_Center: {x: -0.61624, y: 0, z: 0}
 --- !u!4 &920536025
 Transform:
   m_ObjectHideFlags: 0
@@ -960,7 +960,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1008947656}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 5f9b7b2b87fcfaf4ea22853040df854a, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -1174,7 +1174,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!199 &1370168615
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -6146,7 +6146,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -6212,8 +6212,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 11, y: 1, z: 7}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 11, y: 1, z: 8.232479}
+  m_Center: {x: 0, y: 0, z: 0.61623955}
 --- !u!4 &1576561302
 Transform:
   m_ObjectHideFlags: 0
@@ -11412,8 +11412,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 7, y: 1, z: 11}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 8.232479, y: 1, z: 11}
+  m_Center: {x: 0.61623955, y: 0, z: 0}
 --- !u!4 &2074379443
 Transform:
   m_ObjectHideFlags: 0
